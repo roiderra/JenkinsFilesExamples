@@ -14,7 +14,14 @@ pipeline {
                     sleep 2
                     echo 'End of the script'
                 }
+            }  
+        }
+        stage('Test') {
+            steps {
+                echo 'Test stage'
+                sleep 3
             }
+            
         }
     }
 }
